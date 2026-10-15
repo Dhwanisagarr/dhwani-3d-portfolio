@@ -24,15 +24,19 @@ type Lang = 'en' | 'zh'
 
 const COPY = {
   en: {
-    title: 'About Sen',
+    title: 'About Dhwani',
     paragraphs: [
-      "I'm Sen — a creative technologist living where code meets art. I spend my days around coding, creativity, playful interaction & design, and CG work. I love studying and combining skills across different fields — to create, and to explore more possibilities.",
+      "Hey! I'm Dhwani Sagar — someone who enjoys figuring out why things work, why they don't, and how they could work better. I'm interested in the space where product thinking, design, and technology meet.",
+      "I like starting with a problem, understanding the people around it, exploring possible solutions, and then bringing ideas to life — whether that means shaping the product, designing the experience, or building it.",
+      "Right now, I'm learning, experimenting, and looking for opportunities where I can grow through real products and real problems.",
     ],
   },
   zh: {
-    title: 'About Sen',
+    title: 'About Dhwani',
     paragraphs: [
-      '我是 Sen——一个游走在代码与艺术之间的创意技术人。我常年和 Coding、创意、有趣的交互 & 设计、CG 创作等打交道，喜欢研究并组合不同领域的技能，来创造并探索更多可能性。',
+      "Hey! I'm Dhwani Sagar — someone who enjoys figuring out why things work, why they don't, and how they could work better. I'm interested in the space where product thinking, design, and technology meet.",
+      "I like starting with a problem, understanding the people around it, exploring possible solutions, and then bringing ideas to life — whether that means shaping the product, designing the experience, or building it.",
+      "Right now, I'm learning, experimenting, and looking for opportunities where I can grow through real products and real problems.",
     ],
   },
 }
@@ -92,7 +96,7 @@ function LangToggle({ lang, onToggle }: { lang: Lang; onToggle: () => void }) {
 }
 
 export default function App() {
-  const [lang, setLang] = useState<Lang>('zh')
+  const [lang, setLang] = useState<Lang>('en')
   const { scrollY } = useScroll()
   // 作品区蒙层：以作品区顶部从视口底进入到视口中部的进度，驱动 3D 渐暗 + 模糊
   const worksRef = useRef(null)
@@ -103,7 +107,7 @@ export default function App() {
   const fogBg = useTransform(
     worksProgress,
     [0, 1],
-    ['rgba(8, 11, 18, 0)', 'rgba(8, 11, 18, 0.41)'] // 压暗减半（原 0.82）
+    ['rgba(47, 62, 52, 0)', 'rgba(47, 62, 52, 0.41)'] // 压暗减半（原 0.82）
   )
   const fogBlur = useTransform(worksProgress, [0, 1], ['blur(0px)', 'blur(10px)'])
   // 滚动渐暗：离开首屏后压暗 3D 场景，保证履历文字可读
@@ -131,7 +135,7 @@ export default function App() {
           camera={{ position: [0, 5, 19], fov: 39, near: 0.1, far: 500 }}
           gl={{ antialias: false, stencil: false, depth: true, toneMapping: THREE.ACESFilmicToneMapping }}
         >
-          <color attach="background" args={['#0a0e16']} />
+          <color attach="background" args={['#2F3E34']} />
           <Suspense fallback={null}>
             <Backdrop />
             <Scene />
@@ -170,12 +174,12 @@ export default function App() {
         <span className="hero-mark bl">+</span>
         <span className="hero-mark br">+</span>
         <div className="hero-meta hm-tl">
-          <span className="hm-name">Sen Zheng 郑越升</span>
-          <span>Creative Technologist</span>
+          <span className="hm-name">Dhwani Sagar</span>
+          <span>Product Designer & Software Engineer</span>
         </div>
         <div className="hero-meta hm-tr">Portfolio — 2026</div>
-        <div className="hero-meta hm-bl">Code · Art · Play</div>
-        <div className="hero-meta hm-right">Based in Shenzhen</div>
+        <div className="hero-meta hm-bl">Product · Design · Technology</div>
+        <div className="hero-meta hm-right">dhwanisagar.in</div>
       </motion.div>
 
       {/* 全屏胶片噪点蒙层（multiply 混合） */}

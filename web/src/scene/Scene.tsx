@@ -19,8 +19,8 @@ const NODE_LINE = 0.3 // 节点"终点"参考线：条目顶部到达视口该�
 // 上下渐变背景球（包裹相机），两端颜色可调
 function GradientBackground() {
   // glb 相机视角很窄(~23°)，只看到渐变中间一条；陡度把可见窄带拉伸出完整过渡
-  const top = '#6f906f'
-  const bottom = '#dbd3b5'
+  const top = '#3E4F43'
+  const bottom = '#B7C9B7'
   const steep = 1.4
 
   const uniforms = useMemo(
@@ -73,10 +73,10 @@ function Lights() {
     hemiSky: '#ffffff',
     hemiGround: '#404040',
     keyIntensity: 2.35,
-    keyColor: '#ffd9c6',
+    keyColor: '#D9B08C',
     keyPos: [5, 8, 5] as [number, number, number],
     fillIntensity: 2.25,
-    fillColor: '#9fc6ff',
+    fillColor: '#B7C9B7',
     fillPos: [-5, 4, -4] as [number, number, number],
   }
 

@@ -1,4 +1,4 @@
-<h1 align="center">About Sen · 3D 个人简历</h1>
+<h1 align="center">Dhwani Sagar · 3D Portfolio</h1>
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/code-MIT-blue.svg?style=flat" alt="License MIT"></a>
@@ -6,13 +6,11 @@
   <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript 5">
   <img src="https://img.shields.io/badge/three.js-r169-000000?style=flat&logo=three.js&logoColor=white" alt="three.js r169">
   <img src="https://img.shields.io/badge/Vite-5-646CFF?style=flat&logo=vite&logoColor=white" alt="Vite 5">
-  <a href="https://about.senbuzy.com/"><img src="https://img.shields.io/badge/live-demo-brightgreen?style=flat" alt="Live Demo"></a>
 </p>
 
 <p align="center"><b>滚动就是运镜。把你的简历，长在一个 3D 场景里。</b></p>
 
 <p align="center">
-  <a href="https://about.senbuzy.com/">在线预览</a> |
   <a href="#快速开始">快速开始</a> |
   <a href="#改成你自己的">改成你自己的</a> |
   <a href="#换人物模型">换模型</a> |
@@ -23,7 +21,7 @@
 </p>
 
 <p align="center">
-  <a href="https://about.senbuzy.com/"><img src="docs/preview.jpg" alt="3D 简历首屏：滚动驱动的人物模型 + 前景 About 文案" width="800"></a>
+  <img src="docs/preview.jpg" alt="3D 简历首屏：滚动驱动的人物模型 + 前景 About 文案" width="800">
 </p>
 
 一个基于 **React Three Fiber + TypeScript** 的滚动式个人 3D 简历：一层固定的 3D 背景（会随滚动运镜的人物模型）+ 一层可滚动的 HTML 内容（About → 履历 → 作品集）。相机路径直接复用 glb 里烘好的动画，滚动条只是「刮」时间轴，再叠上自动对焦景深和眼球跟随光标。纯前端 SPA，`npm run build` 出来就是一个静态 `dist/`，扔哪都能跑。
@@ -219,5 +217,5 @@ React 18 · TypeScript · @react-three/fiber · @react-three/drei · @react-thre
 ## 许可与版权
 
 - **代码**：[MIT](LICENSE)。
-- **个人内容与素材**：© Sen Zheng（SEN），保留所有权利，**不在 MIT 范围内**，详见 [`NOTICE`](NOTICE)。fork 后请替换成你自己的姓名、模型、简历、作品与 logo。
+- **个人内容与素材**：作品集文案 © Dhwani Sagar；占位人物模型仍属原作者，详见 [`NOTICE`](NOTICE)。
 - **第三方素材**（字体 / HDR）：请各自核对其原始许可后再分发。

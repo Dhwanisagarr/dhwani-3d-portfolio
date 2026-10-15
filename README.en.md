@@ -1,4 +1,4 @@
-<h1 align="center">About Sen · 3D Personal Résumé</h1>
+<h1 align="center">Dhwani Sagar · 3D Portfolio</h1>
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/code-MIT-blue.svg?style=flat" alt="License MIT"></a>
@@ -6,13 +6,11 @@
   <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript 5">
   <img src="https://img.shields.io/badge/three.js-r169-000000?style=flat&logo=three.js&logoColor=white" alt="three.js r169">
   <img src="https://img.shields.io/badge/Vite-5-646CFF?style=flat&logo=vite&logoColor=white" alt="Vite 5">
-  <a href="https://about.senbuzy.com/"><img src="https://img.shields.io/badge/live-demo-brightgreen?style=flat" alt="Live Demo"></a>
 </p>
 
 <p align="center"><b>Scrolling is the camera move. Your résumé, living inside a 3D scene.</b></p>
 
 <p align="center">
-  <a href="https://about.senbuzy.com/">Live Demo</a> |
   <a href="#quick-start">Quick Start</a> |
   <a href="#make-it-yours">Make It Yours</a> |
   <a href="#swapping-the-character-model">Swap the Model</a> |
